@@ -1,0 +1,17 @@
+<div>
+  <div class="jumbotron">
+    <h1 class="display-7">Welcome to J3 Finance Tracker App!</h1>
+  </div>
+  <div class="lead">
+        <h3 class="lead">This is a market-leading crypto portfolio, built to help you save money, plan for the future, and see all your investments in one place.</h3>
+    
+        <%# <a class="btn btn-primary btn-lg" href="#" role="button">Go To My Portfolio</a><br> %>
+        
+        <%= link_to 'Go To My Portfolio', stocks_path, class: "btn btn-primary btn-lg" %>
+        
+        <%# link_to replaces the <a> tag completely, so you don't need to write the <a> tag manually. %>
+        <%# 'Go To My Portfolio' is the text that will appear on the button. %>
+        <%# stocks_path is the URL/path you want the link to navigate to. %>
+        <%# class: "btn btn-primary btn-lg" adds Bootstrap styling to make the link look like a button. %>  
+  </div>
+</div>

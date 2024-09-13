@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/myapp  # Mount the app directory into the container
+    working_dir: /myapp  # Set the working directory
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${PSDB_USER}
+      POSTGRES_PASSWORD: ${PSDB_USER_PASSWORD}
+      POSTGRES_DB: ${PSDB_DB_NAME}
+
+
+volumes:
+  pg:
+

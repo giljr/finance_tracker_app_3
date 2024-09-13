@@ -1,0 +1,6 @@
+<%= form_with model: @stock, local: true do |form| %>
+  <%= form.label :ticker %>
+  <%= form.text_field :ticker %>
+
+  <%= form.submit 'Search' %>
+<% end %>
