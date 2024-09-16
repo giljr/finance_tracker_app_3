@@ -5,7 +5,10 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV['PSDB_DB_NAME'] %>_development
+  host: <%= ENV['PSDB_HOST_NAME'] %>
+  database: <%= ENV['PSDB_DB_NAME'] %>
+  username: <%= ENV['PSDB_USER'] %>
+  password: <%= ENV['PSDB_USER_PASSWORD'] %>
 
 test:
   <<: *default
