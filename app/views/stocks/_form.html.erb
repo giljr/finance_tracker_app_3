@@ -1,6 +1,11 @@
-<%= form_with model: @stock, local: true do |form| %>
-  <%= form.label :ticker %>
-  <%= form.text_field :ticker %>
-
-  <%= form.submit 'Search' %>
-<% end %>
+<!-- app/views/stocks/index.html.erb -->
+    <%= form_with(url: stocks_path, method: :post, local: true) do |form| %>
+      <div class="row">
+        <div class="col-md-10">
+          <%= form.text_field :ticker, placeholder: 'Stock Ticker', class: 'form-control' %>
+        </div>
+        <div class="col-md-2">
+          <%= form.submit "Search", class: "btn btn-primary w-100" %>
+        </div>
+      </div>
+    <% end %>

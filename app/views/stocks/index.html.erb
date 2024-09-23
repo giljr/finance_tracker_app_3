@@ -1,10 +1,16 @@
-<h1 class="jumbotron">My Portfolio</h1>
-<div>
-  <div class="row container">
-    <div>      
-      <h3>Search Currency Quotation</h3>
-      <%= render 'form' %>
-      <%= render 'list' %>
-    </div>
+<!-- app/views/stocks/index.html.erb -->
+<div class="container py-4">
+  <!-- Header Section -->
+  <h1 class="display-4 mb-3">My Portfolio</h1>
+
+  <!-- Search Form -->
+  <div class="mb-3">
+    <h3 class="mb-3">Search Currency Quotation</h3>
+    <%= render 'form' %>
+  </div>
+
+  <!-- Table Section -->
+  <div>
+    <%= render 'list' %>
   </div>
 </div>

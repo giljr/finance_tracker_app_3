@@ -58,4 +58,5 @@ end
 
 gem 'pg'
 gem 'devise'
-gem 'dotenv-rails'
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'unicode-display_width'
