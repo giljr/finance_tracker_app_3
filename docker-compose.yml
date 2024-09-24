@@ -10,16 +10,31 @@ services:
       - "3001:3000"
     depends_on:
       - db
+    networks:
+      jungleNet:
+
 
   db:
+    container_name: ${PSDB_HOST_NAME}
     image: postgres
     restart: always
+    ports:
+      - "5400:5432"
     environment:
       POSTGRES_USER: ${PSDB_USER}
       POSTGRES_PASSWORD: ${PSDB_USER_PASSWORD}
-      POSTGRES_DB: ${PSDB_DB_NAME}
+      POSTGRES_DB: ${PSDB_DB_NAME}                    
+    networks:
+      jungleNet:
+    volumes:
+      - pg:/var/lib/postgresql
+
 
 
 volumes:
   pg:
+
+networks:
+  jungleNet:
+    driver: bridge
 
