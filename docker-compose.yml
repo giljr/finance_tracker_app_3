@@ -1,11 +1,11 @@
-version: '3.7'
+# version: '3.7'
 
 services:
   web:
     build: .
     volumes:
-      - .:/app  # Mount the app directory into the container
-    working_dir: /app  # Set the working directory
+      - .:/app  
+    working_dir: /app 
     ports:
       - "3001:3000"
     depends_on:

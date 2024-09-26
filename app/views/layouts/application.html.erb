@@ -4,6 +4,8 @@
     <title><%= content_for(:title) || "Finance Tracker App 2" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Prevent InstantClick - https://github.com/hotwired/turbo/pull/1101-->
+    <meta name="turbo-prefetch" content="false">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -29,11 +31,11 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>           
+  <body>  
+      <%= render 'layouts/navigation' %>
       <%= render 'layouts/messages'%>
     <main>      
-      <div class="container">
-        <%= render 'layouts/navigation' %>
+      <div class="container">        
         <%= yield %>
       </div>
     </main>
