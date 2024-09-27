@@ -24,8 +24,9 @@ Get started with Version 3 today and simplify your financial tracking like never
 
 ## Acknowledgements
 
- - [ Jeovan Farias](https://www.linkedin.com/in/jeovan-f-6283b8145/)
+ - [Jeovan Farias](https://www.linkedin.com/in/jeovan-f-6283b8145/)
  - [Bruno Vichinheski](https://www.linkedin.com/in/brunovichinheski/)
+ - [Robson CAvalcante](https://www.linkedin.com/in/robson-machado-cavalcante/)
 
 ## Authors
 
