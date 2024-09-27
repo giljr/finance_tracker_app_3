@@ -6,11 +6,15 @@
 
 The latest version of the Finance Tracker App is here, now with seamless Docker integration! Say goodbye to complex setups and get up and running in no time. Whether you're managing your personal finances or looking to explore a powerful new tool, Version 3 has you covered.
 
-🔹 What's New in V3?
+🔹 How To Install ?
 
-    Dockerized Environment for easy setup and deployment
-    Faster, more reliable database management
-    Scalable architecture for future growth
+    mkdir financeAPP
+    cd financeAPP
+    git clone https://github.com/giljr/finance_tracker_app_3.git
+    cd finance_tracker_app_3
+    docker compose up --build
+    
+    
 
 Ready to dive in? Check out the GitHub repository for full instructions and code:
 
@@ -44,7 +48,7 @@ I'm a Full Stack Developer with a degree in Computer Engineering. You can explor
 👉 [v3](/) # **[Finance Tracker Epi 3](https://medium.com/jungletronics/new-finance-tracker-rails-app-d423bce93828)** - Exploring the Currency Exchange API.
 
 
-👉 [v4](/) # **[Docker Finance Tracker Epi4]()** - SOON... 
+👉 [v4](/) # **[Docker Finance Tracker App Epi 4](https://medium.com/jungletronics/docker-intro-1c73f32db840)** - 🚀 Docker Introduction - Get Your Finance App Running in a Container!
 
 
 
