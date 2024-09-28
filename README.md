@@ -8,11 +8,25 @@ The latest version of the Finance Tracker App is here, now with seamless Docker 
 
 🔹 How To Install ?
 
+    sudo systemctl enable docker.service
+    sudo systemctl enable containerd.service
+
+    sudo systemctl status docker
+    sudo ls -l /var/run/docker.sock
+    sudo usermod -aG docker $USER
+    getent group docker
+    export DOCKER_HOST=unix:///var/run/docker.sock
+    source ~/.bashrc  # or ~/.zshrc, depending on your shell
+    sudo systemctl restart docker
+    docker ps -a
+
+    #[Create the Finance APP]
     mkdir financeAPP
     cd financeAPP
     git clone https://github.com/giljr/finance_tracker_app_3.git
     cd finance_tracker_app_3
     docker compose up --build
+    docker ps -a
     
     
 
