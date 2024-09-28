@@ -7,18 +7,21 @@
 The latest version of the Finance Tracker App is here, now with seamless Docker integration! Say goodbye to complex setups and get up and running in no time. Whether you're managing your personal finances or looking to explore a powerful new tool, Version 3 has you covered.
 
 🔹 How To Install ?
-
-    sudo systemctl enable docker.service
-    sudo systemctl enable containerd.service
-
-    sudo systemctl status docker
-    sudo ls -l /var/run/docker.sock
+    #[Insert User in docker group]
     sudo usermod -aG docker $USER
     getent group docker
-    export DOCKER_HOST=unix:///var/run/docker.sock
-    source ~/.bashrc  # or ~/.zshrc, depending on your shell
-    sudo systemctl restart docker
-    docker ps -a
+
+    #[Install docker & verify]
+    sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    sudo apt-get update
+    sudo apt-get install -y docker-ce
+    docker --version
+
+    #[Start docker service]
+    sudo systemctl enable docker.service
+    sudo systemctl enable containerd.service
 
     #[Create the Finance APP]
     mkdir financeAPP
