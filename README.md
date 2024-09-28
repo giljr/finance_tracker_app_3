@@ -7,6 +7,7 @@
 The latest version of the Finance Tracker App is here, now with seamless Docker integration! Say goodbye to complex setups and get up and running in no time. Whether you're managing your personal finances or looking to explore a powerful new tool, Version 3 has you covered.
 
 🔹 How To Install ?
+
     #[Insert User in docker group]
     sudo usermod -aG docker $USER
     getent group docker
