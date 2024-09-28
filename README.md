@@ -26,6 +26,8 @@ The latest version of the Finance Tracker App is here, now with seamless Docker 
     
     sudo systemctl enable docker.service
     sudo systemctl enable containerd.service
+    sudo systemctl restart docker
+    sudo systemctl status docker
 
     #[Create the Finance APP]
     
