@@ -34,7 +34,7 @@ The latest version of the Finance Tracker App is here, now with seamless Docker 
     #[ Simply copy and paste them into your Ubuntu terminal:* ]
     
     mkdir financeAPP
-    docker run ruby:3.2.2-slim
+    docker pull ruby:3.2.2-slim
     cd financeAPP
     git clone https://github.com/giljr/finance_tracker_app_3.git
     cd finance_tracker_app_3
