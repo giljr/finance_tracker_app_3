@@ -8,12 +8,12 @@ The latest version of the Finance Tracker App is here, now with seamless Docker 
 
 ## How To Install ?
 
-    #[Insert User in docker group]
+    #[ Insert User in docker group ] 
     
     sudo usermod -aG docker $USER
     getent group docker
 
-    #[Install docker & verify]
+    #[ Install docker & verify ]
     
     sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -22,14 +22,16 @@ The latest version of the Finance Tracker App is here, now with seamless Docker 
     sudo apt-get install -y docker-ce
     docker --version
 
-    #[Start docker service]
+    #[ Start docker service ]
     
     sudo systemctl enable docker.service
     sudo systemctl enable containerd.service
     sudo systemctl restart docker
     sudo systemctl status docker
 
-    #[Create the Finance APP]
+    #[ Create the Finance APP and run the Docker project ]
+    #[ by executing the following commands. ]
+    #[ Simply copy and paste them into your Ubuntu terminal:* ]
     
     mkdir financeAPP
     docker run ruby:3.2.2-slim
